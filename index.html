@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tranaslation Collective</title>
+  <title>Translation Collective</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f7f7fb;
-      color: #222;
+      background: #ffffff;
+      color: #111111;
     }
     header {
-      background: #1e3a8a;
-      color: white;
+      background: #000000;
+      color: #ffffff;
       padding: 20px;
       text-align: center;
     }
@@ -22,18 +22,25 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      background: #e5e7eb;
+      background: #f2f2f2;
       padding: 10px;
+      border-bottom: 1px solid #dddddd;
     }
     nav a {
       text-decoration: none;
-      color: #1e3a8a;
+      color: #000000;
       font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
+    }
+    h2, h3 {
+      color: #000000;
     }
     .services {
       display: grid;
@@ -41,14 +48,15 @@
       gap: 20px;
     }
     .card {
-      background: white;
+      background: #ffffff;
       padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 0;
+      border: 1px solid #dddddd;
+      box-shadow: none;
     }
     footer {
-      background: #1e3a8a;
-      color: white;
+      background: #000000;
+      color: #ffffff;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
@@ -57,10 +65,15 @@
       display: inline-block;
       margin-top: 10px;
       padding: 10px 18px;
-      background: #1e3a8a;
-      color: white;
-      border-radius: 8px;
+      background: #000000;
+      color: #ffffff;
+      border-radius: 0;
       text-decoration: none;
+      border: 1px solid #000000;
+    }
+    .btn:hover {
+      background: #ffffff;
+      color: #000000;
     }
   </style>
 </head>
@@ -73,25 +86,31 @@
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
-  <a href="#languages">Languages</a>
+
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-  <h2>About Us</h2>
-  <p>
-    Translation Collective is a literary translation collective dedicated to culturally sensitive and 
-    stylistically precise translations between German and major Indian languages. We focus on the 
-    translation of novels, short stories, essays, and other literary texts, working from German 
-    into Indian languages and vice versa, as well as through English as a bridging language. 
-    Our collective brings together translators with deep literary, cultural, and theoretical
-    awareness, ensuring that each translation preserves the aesthetic, historical, and 
-    linguistic integrity of the original text
-  </p>
+  <h2>About the Collective</h2>
+  <div class="services">
+    <div class="card">
+      <p>
+        <strong>Translation Collective</strong> is a literary translation collective working between
+        German and major Indian languages. We focus exclusively on the translation of
+        novels, short stories, essays, and literary non-fiction, approaching each text
+        with close attention to style, voice, and cultural context.
+        <br><br>
+        Our collective model brings together translators with deep linguistic and
+        literary expertise, enabling collaborative, critically informed translations
+        from German into Indian languages and vice versa, as well as through English
+        as a bridge language where required.
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
+ <h2>Our Services</h2>
 <div class="services">
   
   <div class="card">
@@ -119,34 +138,48 @@
     </p>
   </div>
 
-  <div class="card">
-    <h3>Literary Editing & Revision</h3>
-    <p>
-      Stylistic editing, comparative revision, and consistency checks for translated
-      literary texts, manuscripts, and publications.
-    </p>
-  </div>
+</div>
 </section>
 
 <section id="languages">
   <h2>Languages We Work With</h2>
-  <ul>
-    <li>German ↔ English</li>
-    <li>English ↔ Malayalam</li>
-    <li>German ↔ Malayalam</li>
-    <li>Hindi ↔ English</li>
-  </ul>
+  <div class="services">
+    <div class="card">
+      <h3>German</h3>
+      <p>German</p>
+    </div>
+
+    <div class="card">
+      <h3>Major Indian Languages</h3>
+      <p>
+        Malayalam<br>
+        Hindi<br>
+        Tamil<br>
+        Bengali<br>
+        Telugu<br>
+        Kannada<br>
+        Marathi<br>
+        Urdu<br>
+        Gujarati<br>
+        Punjabi
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Bridge Language</h3>
+      <p>English (used for indirect and comparative literary translation)</p>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact Us</h2>
-  <p>Email: linguabridge@example.com</p>
-  <p>WhatsApp: +91-XXXXXXXXXX</p>
-  <a class="btn" href="mailto:linguabridge@example.com">Request a Quote</a>
+  <p>Email: Transaltioncollective@gmail.com.</p>
+  <a class="btn" href="mailto:hungamawithme@gmail.com">Request a Quote</a>
 </section>
 
 <footer>
-  <p>© 2025 LinguaBridge. All rights reserved.</p>
+  <p>©Translation Collective. All rights reserved.</p>
 </footer>
 
 </body>
